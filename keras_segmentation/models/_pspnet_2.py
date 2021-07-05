@@ -2,9 +2,9 @@
 
 from math import ceil
 from sys import exit
-from keras import layers
-from keras.layers import Conv2D, MaxPooling2D, AveragePooling2D
-from keras.layers import BatchNormalization, Activation,\
+from tensorflow.keras import layers
+from tensorflow.keras.layers import Conv2D, MaxPooling2D, AveragePooling2D
+from tensorflow.keras.layers import BatchNormalization, Activation,\
     Input, Dropout, ZeroPadding2D
 from keras.layers.merge import Concatenate, Add
 import tensorflow as tf
