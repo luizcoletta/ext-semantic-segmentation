@@ -2,7 +2,7 @@ from types import MethodType
 
 from tensorflow.keras.models import *
 from keras.layers import *
-import keras.backend as K
+import tensorflow.keras.backend as K
 from tqdm import tqdm
 
 from .config import IMAGE_ORDERING
