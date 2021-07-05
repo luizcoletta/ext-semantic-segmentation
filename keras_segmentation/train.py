@@ -3,7 +3,7 @@ from .data_utils.data_loader import image_segmentation_generator, \
     verify_segmentation_dataset
 import glob
 import six
-from keras.callbacks import Callback
+from tensorflow.keras.callbacks import Callback
 
 
 def find_latest_checkpoint(checkpoints_path, fail_safe=True):
