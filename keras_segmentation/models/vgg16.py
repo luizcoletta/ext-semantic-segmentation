@@ -1,4 +1,4 @@
-import tensorflow.keras
+import tensorflow as tf
 from tensorflow.keras.models import *
 from tensorflow.keras.layers import *
 
@@ -74,7 +74,7 @@ def get_vgg_encoder(input_height=224,  input_width=224, pretrained='imagenet'):
     f5 = x
 
     if pretrained == 'imagenet':
-        VGG_Weights_path = keras.utils.get_file(
+        VGG_Weights_path = tf.keras.utils.get_file(
             pretrained_url.split("/")[-1], pretrained_url)
         Model(img_input, x).load_weights(VGG_Weights_path)
 
