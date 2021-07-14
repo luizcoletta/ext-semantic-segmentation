@@ -1,7 +1,7 @@
-import keras
+import tensorflow.keras
 from tensorflow.keras.models import *
 from tensorflow.keras.layers import *
-from keras import layers
+from tensorflow.keras import layers
 
 # Source:
 # https://github.com/fchollet/deep-learning-models/blob/master/resnet50.py
